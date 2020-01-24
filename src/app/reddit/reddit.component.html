@@ -1,0 +1,39 @@
+<p>reddit works!</p>
+
+<form class="container">
+
+  Title:<input type="text" #newtitle name="title" > <br>
+  Link:<input type="url" #newlink name="sitelink"> <br>
+  <button style="text-align: right;" (click)="add(newtitle,newlink)">Add post</button>
+
+</form>
+<hr>
+
+<app-reddit-show *ngFor="let airt of sorted()" [articleX]="airt">
+
+</app-reddit-show>
+
+
+
+<!-- <app-reddit-show></app-reddit-show> -->
+<hr>
+<!-- <hr>
+<form class="ui large form segment">
+ <h3 class="ui header">Add a Link</h3>
+
+ <div class="field">
+ <label for="title">Title:</label>
+ <input name="title" #newtitle>
+ </div>
+ <div class="field">
+ <label for="link">Link:</label>
+   <input name="link" #newlink>
+   </div>
+
+
+   <button (click)="addArticle(newtitle, newlink)"
+   class="ui positive right floated button">
+   Submit link
+   </button>
+
+   </form> -->

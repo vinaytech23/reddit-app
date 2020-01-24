@@ -1,0 +1,12 @@
+<p>listdata works!</p>
+its in list data
+<hr>
+<ul> I am in list data calling
+  <li *ngFor="let name of names; let i= index;" type="a">
+   <app-showdata [catchname]='name'> </app-showdata>
+  </li>
+</ul>
+<hr>
+<app-showdata [bnum]='1234'></app-showdata>
+<hr>
+<app-showdata [nameArray]='names'></app-showdata>

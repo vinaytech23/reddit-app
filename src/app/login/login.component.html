@@ -1,0 +1,13 @@
+<p>login works!</p>
+<form [formGroup]="loginform" (submit)="postData()">
+    <label>Name:</label>
+    <input type="text" formControlName="username">
+    <br>
+    <label>Passowrd:</label>
+    <input type="password" formControlName="password"><br>
+    <button>submit</button>
+</form>
+
+<small class="inline">{{ mytoken }}</small>
+
+<!-- <button (click)="removeToken()">Logout</button> -->
